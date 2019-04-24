@@ -54,11 +54,11 @@ workflows:
   build-deploy:
     jobs:
       - build
-      - deploy:
+      - hold:
           type: approval
+      - deploy:
           requires:
-            - build
+            - hold
           filters:
             branches:
               only: master
-# test
