@@ -30,3 +30,4 @@ adonis migration:run
 ```
 
 test
+foobar
